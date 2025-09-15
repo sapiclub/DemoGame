@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi App</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      background-image: url('https://i.supaimg.com/fcdcfffe-ba41-4ce2-a5e2-e1a8d8b9a71a.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+    .btn {
+      margin-bottom: 50px;
+      padding: 15px 40px;
+      background: #ff6600;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button class="btn" onclick="mostrarLogin()">Entrar</button>
+
+  <script>
+    function mostrarLogin() {
+      window.location.href = "login.html"; // abre la pantalla de login
+    }
+  </script>
+</body>
+</html>
