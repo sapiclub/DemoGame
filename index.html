@@ -9,23 +9,30 @@
       margin: 0;
       padding: 0;
       height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
       background-image: url('https://i.supaimg.com/fcdcfffe-ba41-4ce2-a5e2-e1a8d8b9a71a.jpg');
       background-size: cover;
       background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
       font-family: Arial, sans-serif;
     }
     .btn {
-      margin-bottom: 50px;
-      padding: 15px 40px;
-      background: #ff6600;
+      margin-bottom: 60px;
+      padding: 15px 50px;
+      background: rgba(255, 102, 0, 0.9);
       color: white;
       border: none;
-      border-radius: 25px;
-      font-size: 18px;
+      border-radius: 30px;
+      font-size: 20px;
+      font-weight: bold;
       cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #ff8533;
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -34,7 +41,7 @@
 
   <script>
     function mostrarLogin() {
-      window.location.href = "login.html"; // abre la pantalla de login
+      window.location.href = "login.html";
     }
   </script>
 </body>
